@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,6 +26,7 @@ class MyHomePage extends StatefulWidget {
 
   // termos reservados em azul
   // Comentários com // e em bloco /* */
+  // r - Hot Reload
   final String title;
 
   @override
@@ -31,11 +34,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _numeroAleatorio = 0;
+  List _frases = [
+    'Hello',
+    'Hi, There!',
+    'Good Afternoon',
+    'Good Morning',
+    'Good Night',
+    'Good Evening'
+  ];
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _numeroAleatorio = new Random().nextInt(6);
     });
   }
 
@@ -50,10 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              "It's Okay:",
             ),
             Text(
-              '$_counter',
+              _frases[_numeroAleatorio],
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
@@ -61,8 +72,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: "Increment",
+        child: const Icon(Icons.access_alarm),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
