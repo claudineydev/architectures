@@ -1,0 +1,18 @@
+Flutter:
+Dart
+Flutter 3.3.0 -> 3.27.0
+Flutter Widget Snippets
+Color Theme Dark Visual Studio
+projetos-flutter
+flutter create primeiro_projeto
+flutter doctor
+flutter devices
+flutter run -d chrome
+
+flutter config --enable-windows-desktop
+flutter channel stable
+flutter upgrade
+
+flutter create 
+
+VS 
