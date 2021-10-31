@@ -3,7 +3,38 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MaterialApp(
+      home: Column(
+        
+        children: [
+          Text('Software Architect', textAlign: TextAlign.right,),
+          Container(
+            margin: EdgeInsets.all(90),
+            padding: EdgeInsets.all(90),
+            decoration: BoxDecoration(
+              border: Border.all(width: 3, color: Colors.white),
+            ),
+            child: Column(
+              children: <Widget>[
+                Text(
+                  'Claudiney',
+                  textAlign: TextAlign.justify,
+                ),
+                Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    'Itiki',
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +47,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightGreen,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Sistema Administrativo'),
     );
   }
 }
@@ -35,7 +66,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _numeroAleatorio = 0;
-  List _frases = [
+  final List _frases = [
     'Hello',
     'Hi, There!',
     'Good Afternoon',

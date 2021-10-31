@@ -16,3 +16,51 @@ flutter upgrade
 flutter create 
 
 VS 
+
+'flutter clean'
+
+Front:
+1. MaterialApp
+
+2. Row
+Quebra:
+	Row(children: [Text('Claudiney Itiki'),
+
+Não quebram:
+ home: Text('Claudiney Itiki'),
+ Container(child: Text('Claudiney Itiki 2'),
+
+3. Column
+
+4. Container
+
+TextStyle
+FlatButton
+    Container(
+      padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+      margin: EdgeInsets.all(0),
+      decoration: BoxDecoration(
+        border: Border.all(width: 3, color: Colors.white),
+      ),
+      child: 
+    ),
+Margin somente em container
+ctrl import material
+
+
+padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+      margin: EdgeInsets.all(0),
+      //margin: EdgeInsets.only(top: 50, left: 50),
+      //margin: EdgeInsets.fromLTRB(10, 60, 30, 40),
+      decoration: BoxDecoration(
+        border: Border.all(width: 3, color: Colors.white)
+      ),padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+      margin: EdgeInsets.all(0),
+      //margin: EdgeInsets.only(top: 50, left: 50),
+      //margin: EdgeInsets.fromLTRB(10, 60, 30, 40),
+      decoration: BoxDecoration(
+        border: Border.all(width: 3, color: Colors.white)
+      ),
+	  
+alt shift f
+stf
